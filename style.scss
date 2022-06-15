@@ -1,0 +1,143 @@
+$cyan: #2ab2af;
+$brightYellow: hsl(71, 73%, 54%); //h2 color
+$lightGrey: #e5eff5; /* body bgcolor */
+$greyishBlue: #98a6bd;
+$radius: 6px;
+
+// B5B8C0
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background-color: $lightGrey;
+    display: grid;
+    place-items: center;
+    color: $greyishBlue;
+}
+
+.mainContainer {
+    background-color: #fff;
+    max-width: 640px;
+    height: auto;
+    display: inline-flex;
+    border-radius: $radius;
+    flex-wrap: wrap;
+    flex: 1 1 1;
+    margin-block: 4rem 0;
+    box-shadow: 0px 0px 6.5px rgba(0, 0, 0, 0.11),
+        0px 0px 8px rgba(0, 0, 0, 0.082);
+}
+
+.topBox {
+    padding: 2.3rem 2.3rem 1rem 2.3rem;
+    width: 100%;
+    h1 {
+        color: $cyan;
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 24px;
+        color: $brightYellow;
+        margin-bottom: 0.8rem;
+    }
+    p {
+        line-height: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+}
+h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-block: 2rem 1rem;
+}
+.bottomLeft {
+    background-color: $cyan;
+    border-bottom-left-radius: $radius;
+    width: 50%;
+    padding: 0 2.3rem 0 2.3rem;
+    color: #d9ffff;
+    .price {
+        color: 18px;
+        color: #d6fffe;
+    }
+    .highlighted {
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        margin-block: 1rem;
+    }
+    button,
+    button:active,
+    button:hover {
+        outline: none;
+        border: none;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 0.8rem 0rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 6px;
+        background-color: $brightYellow;
+        color: $lightGrey;
+        font-weight: 700;
+        box-shadow: 0 4px 4px #00000033;
+        cursor: pointer;
+    }
+}
+.bottomRight {
+    background-color: hsl(179, 47%, 52%);
+    border-bottom-right-radius: $radius;
+    width: 50%;
+    padding: 0 2.3rem 0 2.3rem;
+    color: #d9ffff;
+    font-size: 14px;
+    p {
+        line-height: 1.3rem;
+        margin-bottom: 2rem;
+        max-width: 10.5rem;
+    }
+}
+footer {
+    background-color: #98a6bd50;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+.attribution {
+    width: 100%;
+    font-size: 12px;
+    padding: 0.5em 0;
+    display: block;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 541px) {
+    .mainContainer {
+        margin: 2rem;
+    }
+    .bottomLeft,
+    .bottomRight {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .bottomRight {
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+    }
+}
