@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [GitHub](https://github.com/mani-cmd/single-price-grid-component)
--   Live Site URL: [Vercel](https://your-live-site-url.com)
+-   Live Site URL: [Vercel](https://mani-cmd.github.io/single-price-grid-component/)
 
 ## My process
 
